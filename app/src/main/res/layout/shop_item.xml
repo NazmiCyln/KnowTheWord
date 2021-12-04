@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#C58E40">
+
+    <TextView
+        android:id="@+id/custom_dialog_shop_item_textViewItemTitle"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="3 Adet Can"
+        android:textColor="#50340A"
+        android:textSize="15sp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/custom_dialog_shop_item_imageViewItemImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/heart"/>
+
+    <Button
+        android:id="@+id/custom_dialog_shop_item_buttonItemPrice"
+        android:layout_width="98dp"
+        android:layout_height="45dp"
+        android:textColor="#50340A"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_satin_al"
+        android:text="19,99 TL"
+        android:textSize="14sp"/>
+
+
+
+
+</LinearLayout>

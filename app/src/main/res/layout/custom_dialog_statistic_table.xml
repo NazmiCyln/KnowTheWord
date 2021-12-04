@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#D1A668"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BC822E"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İstatistik"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/custom_dialog_statistic_table_imageViewClose"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#6A450F"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/custom_dialog_statistic_table_imageViewClose"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_close"
+            android:scaleType="fitXY"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <!-- Toplam soru kısmı -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toplam Soru Sayısı"
+        android:textColor="#6A450F"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"/>
+
+    <ProgressBar
+        android:id="@+id/custom_dialog_statistic_table_progressBarQuesitonCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:padding="16dp"
+        android:min="0"/>
+
+    <TextView
+        android:id="@+id/custom_dialog_statistic_table_textViewQuesitonCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/10"
+        android:textColor="#6A450F"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="end"
+        android:textSize="16sp"/>
+
+
+    <!-- Toplam kelime kısmı -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toplam Kelime Sayısı"
+        android:textColor="#6A450F"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"/>
+
+    <ProgressBar
+        android:id="@+id/custom_dialog_statistic_table_progressBarWordCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:padding="16dp"
+        android:min="0"/>
+
+    <TextView
+        android:id="@+id/custom_dialog_statistic_table_textViewWordCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/10"
+        android:textColor="#6A450F"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="end"
+        android:textSize="16sp"/>
+
+
+    <!-- Toplam yanlış tahmin kısmı -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toplam Yanlış Tahmin Sayısı"
+        android:textColor="#6A450F"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"/>
+
+    <ProgressBar
+        android:id="@+id/custom_dialog_statistic_table_progressBarFalseGuessCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:padding="16dp"
+        android:min="0"/>
+
+    <TextView
+        android:id="@+id/custom_dialog_statistic_table_textViewFalseGuessCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/10"
+        android:textColor="#6A450F"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="end"
+        android:textSize="16sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/custom_dialog_statistic_table_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/custom_dialog_statistic_table_btnPlayAgain"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            android:textAllCaps="false"
+            android:textColor="#50340A"
+            android:background="@drawable/btn_settings"
+            android:text="Tekrar Oyna"/>
+
+        <Button
+            android:id="@+id/custom_dialog_statistic_table_btnMainMenu"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#50340A"
+            android:background="@drawable/btn_settings"
+            android:textAllCaps="false"
+            android:text="Çıkış"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

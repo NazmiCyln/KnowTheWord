@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D1A668"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BC822E"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayarlar"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/custom_dialog_settings_imageViewClose"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#6A450F"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/custom_dialog_settings_imageViewClose"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_close"
+            android:scaleType="fitXY"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ses Aç - Kapat"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#50340A"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/custom_dialog_settings_radioBtnMusicOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aç"
+                    android:textColor="#50340A"
+                    android:layout_marginRight="15dp"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/custom_dialog_settings_radioBtnMusicClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kapat"
+                    android:textColor="#50340A"
+                    android:textSize="16sp"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/custom_dialog_settings_btnChangeName"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="16.5sp"
+            android:layout_marginEnd="10dp"
+            android:textAllCaps="false"
+            android:textColor="#50340A"
+            android:background="@drawable/btn_settings"
+            android:text="İsim Değiştir"/>
+
+        <Button
+            android:id="@+id/custom_dialog_settings_btnChangeProfileImage"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:textSize="16.5sp"
+            android:textColor="#50340A"
+            android:background="@drawable/btn_settings"
+            android:textAllCaps="false"
+            android:text="Resim Değiştir"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

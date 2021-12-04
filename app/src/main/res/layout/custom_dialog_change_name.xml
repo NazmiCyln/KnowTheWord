@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D1A668"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BC822E"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İsmini Değiştir"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/custom_dialog_change_name_close"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#6A450F"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/custom_dialog_change_name_close"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/custom_dialog_change_name_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İsminizi Giriniz"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:textColor="#432B06"
+        android:textColorHint="#976111"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/custom_dialog_change_name_btnChangeName"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Değiştir"
+        android:layout_marginTop="10dp"
+        android:textSize="19sp"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_settings"
+        android:textStyle="bold"
+        android:textColor="#432B06"/>
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#D1A668">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BC822E"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/custom_dialog_get_heart_imageViewClose"
+            android:gravity="center"
+            android:text="Can Menüsü"
+            android:textColor="#6A450F"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/custom_dialog_get_heart_imageViewClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <ImageView
+               android:id="@+id/custom_dialog_get_heart_imageViewShowAndGet"
+               android:layout_width="110dp"
+               android:layout_height="110dp"
+               android:padding="13dp"
+               android:src="@drawable/video_play"
+               android:background="@drawable/img_can_menu"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="İzle Kazan"
+               android:layout_gravity="center"
+               android:layout_marginTop="5dp"
+               android:textSize="17sp"
+               android:textColor="#6A450F"
+               android:textStyle="bold"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/custom_dialog_get_heart_imageViewBuyAndGet"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:padding="12dp"
+                android:src="@drawable/shopping"
+                android:background="@drawable/img_can_menu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satın Al"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textColor="#6A450F"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#BC822E"/>
+
+
+
+</LinearLayout>
