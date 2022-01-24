@@ -21,20 +21,40 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     //Sorular için listeler
     private String[] sorularList = {"Mutfakta iş yaparken veya yemek yerken kullanılan aletler nelerdir?",
-    "İç Anadolu bölgesindeki iller?"};
-    private String[] sorularKodList = {"mutfakS1", "illerS1"};
+    "İç Anadolu bölgesindeki iller?", "Marmara bölgesindeki iller?", "En fazla il hangi bölgemizde bulunur?",
+            "Bilgisayar markaları?", "Telefon markaları?"};
+    private String[] sorularKodList = {"mutfakS1", "illerS1", "illerS2", "bölge1", "pc", "tel"};
 
     //Kelimeler için listeler
     private String[] kelimelerList = {"Çatal", "Kaşık", "Bıçak", "Tabak", "Tencere", "Tava", "Çaydanlık", "Süzgeç",
 
     "Aksaray", "Ankara", "Çankırı", "Eskişehir", "Karaman", "Kayseri", "Kırıkkale", "Kırşehir", "Konya", "Nevşehir",
-            "Niğde", "Sivas", "Yozgat"};
+            "Niğde", "Sivas", "Yozgat",
+
+    "İstanbul", "Edirne", "Kırklareli", "Tekirdağ", "Çanakkale", "Kocaeli", "Yalova", "Sakarya", "Bilecik", "Bursa", "Balıkesir",
+
+            "Karadeniz",
+
+            "Lenovo", "Hp", "Dell", "Acer", "Asus", "Apple", "Razer", "Msı", "Samsung", "Huawei", "Casper", "Monster",
+            "Toshiba", "Microsoft", "Honor", "Gigabyte",
+
+            "Samsung", "Xiaomi", "Apple", "Oppo", "Huawei", "Lg", "Nokia", "Honor", "Htc", "Meizu", "OnePlus", "Tcl", "Asus", "Poco",
+    };
 
     private String[] kelimelerKodList = {"mutfakS1", "mutfakS1", "mutfakS1", "mutfakS1", "mutfakS1", "mutfakS1", "mutfakS1",
             "mutfakS1",
 
             "illerS1", "illerS1", "illerS1", "illerS1", "illerS1", "illerS1", "illerS1", "illerS1", "illerS1", "illerS1",
-            "illerS1", "illerS1", "illerS1"};
+            "illerS1", "illerS1", "illerS1",
+
+            "illerS2", "illerS2", "illerS2", "illerS2", "illerS2", "illerS2", "illerS2", "illerS2", "illerS2", "illerS2", "illerS2",
+
+            "bölge1",
+
+            "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc",
+
+            "tel", "tel", "tel", "tel", "tel", "tel", "tel", "tel", "tel", "tel", "tel", "tel", "tel", "tel",
+    };
 
 
     private ProgressBar mProgress;
